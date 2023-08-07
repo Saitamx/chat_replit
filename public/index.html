@@ -9,16 +9,35 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-pink-100 h-screen flex justify-center items-center">
-    <div class="bg-white p-6 rounded-xl shadow-md w-96">
-      <h1 class="text-center text-2xl mb-4">Chat de Bithia y Mati ❤️</h1>
-      <div id="chat-box" class="border p-3 mb-3 h-64 overflow-y-scroll"></div>
-      <input
-        id="message-input"
-        type="text"
-        class="form-control w-full p-2 border rounded"
-        placeholder="Escribe un mensaje..."
-      />
+  <body
+    class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 h-screen flex justify-center items-center"
+  >
+    <div
+      class="bg-opacity-60 bg-white p-6 rounded-xl shadow-xl w-96 transform rotate-2 animate__animated animate__fadeInDown"
+    >
+      <h1 class="text-center text-3xl mb-4 font-bold text-purple-800">
+        Chat de Bithia y Mati ❤️
+      </h1>
+      <div
+        id="chat-box"
+        class="border p-3 mb-3 h-64 overflow-y-scroll bg-gray-50 rounded space-y-2"
+      >
+        <!-- Los mensajes se insertarán aquí -->
+      </div>
+      <div class="flex">
+        <input
+          id="message-input"
+          type="text"
+          class="form-control flex-grow p-2 border rounded-l focus:ring focus:ring-purple-200 focus:border-transparent"
+          placeholder="Escribe un mensaje..."
+        />
+        <button
+          id="send-button"
+          class="bg-purple-600 text-white p-2 rounded-r hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 animate__animated animate__pulse"
+        >
+          Enviar
+        </button>
+      </div>
     </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="script.js"></script>
