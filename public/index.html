@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat de Bithia y Mati</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-pink-100 h-screen flex justify-center items-center">
+    <div class="bg-white p-6 rounded-xl shadow-md w-96">
+      <h1 class="text-center text-2xl mb-4">Chat de Bithia y Mati ❤️</h1>
+      <div id="chat-box" class="border p-3 mb-3 h-64 overflow-y-scroll"></div>
+      <input
+        id="message-input"
+        type="text"
+        class="form-control w-full p-2 border rounded"
+        placeholder="Escribe un mensaje..."
+      />
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
